@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b5b5b5;
+}
+
+.calculator {
+    width: 340px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 20px;
+   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+.display {
+    height: 80px;
+    background-color: #222;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 40px;
+    color: white;
+    line-height: 80px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.btn {
+    background-color: #4d4d4d;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:active {
+    background-color: #666;
+}
+
+.operator {
+    background-color: #ff9500;
+}
+
+.operator:active {
+    background-color: #e08b00;
+}
+
+.clear {
+    background-color: #d4d4d2;
+    color: black;
+}
+
+.clear:active {
+    background-color: #c3c3c1;
+}
+
+.number.zero {
+    grid-column: span 2;
+    border-radius: 50px;
+}
+
+.zero {
+    text-align: left;
+    padding-left: 45px;
+}
